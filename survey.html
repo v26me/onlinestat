@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Data Laboratory — Learning statistics by doing research</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand">Data Laboratory</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">        
+        <div class="row">
+            <div class="span3">
+                <div>
+                    <img class="av" src="uploads/img/survey_5.jpg" />
+                </div>
+            </div>
+        
+            <div class="span9">        
+                <div class="row">
+                    <div class="span5">
+                        <h1>The Simpsons study</h1>
+                    </div>
+                    <div class="span4 data-btn">
+                        <div class="btn-group">
+                            <a class="btn disabled"><i class="icon-list" style="font-size: 14px"></i> Survey</a>
+                            <a class="btn" href="data.html"><i class="icon-book"></i> Data</a>
+                            <a class="btn" href="analysis.html"><i class="icon-bar-chart"></i> Analysis</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="questions">
+                    <form id="survey_form">
+                        <input id="survey_id" type="hidden" value="4" name="survey_id" />
+                        <div class="question">
+                            <hr />
+                            <h3>Who is your favourite Simpson?</h3>
+                            <div class="options">
+                                <label class="radio"><input name="character" value="2" type="radio" /> Lisa</label>
+                                <label class="radio"><input name="character" value="0" type="radio" /> Homer</label>
+                                <label class="radio"><input name="character" value="3" type="radio" /> Bart</label>
+                                <label class="radio"><input name="character" value="1" type="radio" /> Mardge</label>
+                                <label class="radio"><input name="character" value="4" type="radio" /> Maggie</label>           
+                            </div>
+                        </div>
+                        <div class="question">
+                            <hr />
+                            <h3>Your gender</h3>
+                            <div class="options">
+                                <label class="radio"><input name="sex" value="0" type="radio" /> Male</label>
+                                <label class="radio"><input name="sex" value="1" type="radio" /> Female</label>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <hr />
+                            <h3>Did you see The Simpsons Movie?</h3>
+                                <div class="options">
+                                    <label class="radio"><input name="movie" value="0" type="radio" /> Yes</label>
+                                    <label class="radio"><input name="movie" value="1" type="radio" /> No</label>
+                                </div>
+                        </div>
+                        <div class="question">
+                            <hr />
+                            <h3>Your height</h3>
+                            <div class="options">
+                                <input name="height" type="text" data-min="120" data-max="220" data-dec="0" />
+                                <span class="err"></span>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <hr />
+                            <h3>Your weight</h3>
+                            <div class="options">
+                                <input name="weight" type="text" data-min="30" data-max="200" data-dec="0" />
+                                <span class="err"></span>
+                        </div>                
+                    </form>      
+                </div>
+                <hr />
+                <a class="btn" onclick="alert('Sorry, not in the demo :(');">Submit</a>
+                <div class="alert alert-error hide send_error">Please, choose all answers</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

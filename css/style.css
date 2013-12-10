@@ -1,0 +1,248 @@
+body {
+    padding: 60px 0 40px;    
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.navbar-inner {
+  background-color: #3c406d;
+  background-image: -moz-linear-gradient(top, #4c507d, #2c305d);
+  background-image: -ms-linear-gradient(top, #4c507d, #2c305d);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4c507d), to(#2c305d));
+  background-image: -webkit-linear-gradient(top, #4c507d, #2c305d);
+  background-image: -o-linear-gradient(top, #4c507d, #2c305d);
+}
+.intro {
+    background-color: #7c80Ad;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px 0 40px;
+    font-weight: bold;
+}
+
+.intro h4 {
+   font-size: 18px;
+}
+
+.intro.small  {
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.navbar .brand {
+    color: #1c204d;
+    text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+    font-weight: bold;
+}
+
+.start-button {
+    text-align: center;
+}
+
+.gallery {
+    margin-top: 40px;
+}
+
+.gallery img {
+    border-radius: 8px 8px 8px 8px;
+    margin: 5px auto;
+}
+
+.gallery .thumbnail {
+    padding-top: 7px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.gallery .thumbnail.start .btn {
+    margin: 95px 0;
+}
+
+.gallery h5 .icon-eye-open, .gallery h5 .icon-eye-close {    
+    cursor: default;
+}
+
+.gallery a {
+    color: #333333;
+}
+
+h2.sign {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+h2.sign a  {
+    border-bottom: 1px dotted;
+    cursor: pointer;
+}
+
+h2.sign a:hover  {
+    border-bottom: none;
+    text-decoration: none;
+    color: #0088CC;
+}
+
+.validation-wrong, .validation-wrong .help-inline {
+    color: #B94A48;
+}
+
+.help-inline.error, .validation-message, .err {
+    color: #B94A48; 
+}
+
+.err {
+    margin-bottom: 9px;
+    display: inline-block;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.validation-wrong input, input.validation-wrong {
+    border-color: #B94A48;
+    color: #B94A48;
+}
+
+.validation-wrong input:focus, input:focus.validation-wrong {
+    border-color: #953B39;
+    box-shadow: 0 0 6px #D59392;
+}
+
+.navbar .nav > li > a {
+    color: #DDD;
+}
+
+.intro a.btn {
+    margin-left: 20px;
+}
+
+img.av {
+    border-radius: 8px 8px 8px 8px;
+    width: 200px;
+}
+
+.navbar .nav > li > a {
+    color: #9cA0Cd;
+    
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover {
+    background-color: #2c305d;
+}
+
+.navbar .brand {
+    padding: 10px 20px 10px;
+}
+
+.controls {
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+ul.options input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+i.random {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.add_q_btn {
+    margin: 10px 0;
+}
+
+a.q-more {
+    cursor: pointer;
+}
+
+form.my h4 {
+    font-size: 13px;    
+}
+
+form.my input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.questions {
+    margin-top: 10px;
+}
+
+.questions .actions {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.question .options {
+    margin-top: 10px;
+}
+
+.questions h3 {
+    line-height: 18px;
+}
+
+label.image {
+    text-align: center;
+}
+
+label.image img {
+    width: 120px;
+    border-radius: 5px;
+}
+
+label.image input {
+    display: inline-block;
+}
+
+.edit_form {
+    margin-top: 5px;
+}
+
+.send_error {
+    margin-top: 10px;
+}
+
+#data-table {
+    margin-top: 20px;
+}
+
+.data-btn a {
+    margin-left: 10px;    
+    line-height: 26px;
+}
+
+.vars {
+    margin-bottom: 10px;
+}
+
+.dropdown.static > a:hover {
+    cursor: pointer;
+    color: #0088CC;
+}
+
+.dropdown-menu a:hover {
+    cursor: pointer;
+}
+
+.dropdown.static .dropdown-menu li > a:hover{
+  color: #555555;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  cursor: default;
+}
+
+.dropdown.static > a:hover {
+    cursor: pointer;
+    color: #0088CC;
+}
+
+.dropdown.static .dropdown-toggle{
+    color: #0088CC;
+    background: none;
+}

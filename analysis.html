@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Data Laboratory — Learning statistics by doing research</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jqueryui.css">
+    <link rel="stylesheet" href="css/stat.css">
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand">Data Laboratory</a>
+            </div>    
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <div class="row">
+                    <div class="span btn-group vars" data-toggle="buttons-radio">
+                        <a class="btn" data-num="0">Character</a>
+                        <a class="btn" data-num="1">Sex</a>
+                        <a class="btn" data-num="2">Movie</a>
+                        <a class="btn" data-num="3">Height</a>
+                        <a class="btn" data-num="4">Weight</a>
+                    </div>
+                  
+                    <div class="span btn-group add-vars">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown">
+                            <span id="add-var-name">None</span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a data-num="-1">None</a></li>
+                            <li><a data-num="0">Character</a></li>
+                            <li><a data-num="1">Sex</a></li>
+                            <li><a data-num="2">Movie</a></li>
+                            <li><a data-num="3">Height</a></li>
+                            <li><a data-num="4">Weight</a></li>
+                        </ul>
+                    </div>
+                </div>
+              
+                <div class="graph">
+                    <svg id="svg" width="460px" height="300px"></svg>
+                </div>
+              
+                <div class="bottom-toolbar">
+                    <div>
+                        <a class="btn btn-small percent-button hide" data-toggle="button" href="#">Show percent</a>
+                    </div>
+                    <div id="slider" class="hide"></div>
+                </div>        
+            </div>
+          
+            <div class="span6">
+                <div>
+                    <div class="btn-group method" data-toggle="buttons-radio">
+                        <a class="btn" data-name="description">Description</a>
+                        <a class="btn" data-name="fiting">Fitting</a>
+                        <a class="btn hide" data-name="location">Location</a>
+                        <a class="btn hide" data-name="independence">Independence</a>               
+                        <a class="btn" data-name="secret">?</a>
+                    </div>
+                </div>
+                <div class="info"></div>
+            </div>
+        </div>
+
+        <script>
+           var meta = [{"name":"Character","scale":"Nominal","unit":["Homer","Mardge","Lisa","Bart","Maggie"]},{"name":"Sex","scale":"Nominal","unit":["Male","Female"]},{"name":"Movie","scale":"Nominal","unit":["Yes","No"]},{"name":"Height","scale":"Ratio","unit":"None"},{"name":"Weight","scale":"Ratio","unit":"None"}];
+            var data = [["0","0","1","188","84"],["1","0","0","170","69"],["0","0","1","174","70"],["2","0","0","166","61"],["3","1","1","177","76"],["0","1","0","160","61"],["4","0","1","176","74"],["2","1","0","162","61"],["1","1","0","164","62"],["0","1","1","174","73"],["2","0","0","189","85"],["2","1","0","158","59"],["0","1","0","157","59"],["0","0","1","170","66"],["2","1","0","159","59"],["2","1","1","167","67"],["0","1","1","169","69"],["3","0","1","184","79"],["2","1","1","161","62"],["2","0","1","178","76"],["4","1","0","162","64"],["0","1","1","158","57"],["1","0","1","187","82"],["2","1","0","169","68"],["3","0","1","171","67"],["4","0","0","176","73"],["0","0","0","172","71"],["1","1","0","165","64"],["2","1","0","161","63"],["0","0","1","170","68"],["3","1","0","161","63"],["4","1","0","161","61"],["0","0","1","180","76"],["2","0","0","176","70"],["2","1","0","167","64"],["2","0","1","171","68"],["2","0","1","160","59"],["2","1","0","159","60"],["1","1","1","158","58"],["2","0","0","175","70"],["3","1","0","158","59"],["4","0","1","180","72"],["0","0","0","186","81"],["1","0","0","180","75"],["2","0","1","180","76"],["2","0","0","176","72"],["3","0","0","182","79"],["4","0","1","174","69"],["0","1","1","165","67"],["0","1","0","165","63"],["1","1","0","159","59"],["2","0","1","166","66"],["2","0","1","184","79"],["2","1","1","159","60"],["3","1","1","163","62"],["3","0","1","169","68"],["2","0","1","174","73"],["0","0","1","170","65"],["2","1","0","172","73"],["2","0","0","174","73"]];
+        </script>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/request.js"></script>
+    <script src="js/sender.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/observer.js"></script>
+    <script src="js/stat/d3.js"></script>
+    <script src="js/jqueryui.js"></script>
+    <script src="js/stat/vMath.js"></script>
+    <script src="js/stat/data.js"></script>
+    <script src="js/stat/JB.js"></script>
+    <script src="js/stat/W.js"></script>
+    <script src="js/stat/U.js"></script>
+    <script src="js/stat/bar.js"></script>
+    <script src="js/stat/box.js"></script>
+    <script src="js/stat/chord.js"></script>
+    <script src="js/stat/hist.js"></script>
+    <script src="js/stat/qq.js"></script>
+    <script src="js/stat/scatter.js"></script>
+    <script src="js/surveys/analysis.js"></script>
+    <script>
+    $('[rel=tooltip]').tooltip();
+    </script>
+</body>
+</html>

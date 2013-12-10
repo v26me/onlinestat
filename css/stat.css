@@ -1,0 +1,165 @@
+text.name {
+    fill: #444;
+    font-size: 11px;
+}
+
+.bar rect, .hist rect {
+	fill: steelblue;	
+}
+
+.dist rect {
+    fill: royalblue;
+    opacity: 0.5;
+}
+
+.dist circle {
+    fill: #fff;
+    stroke: #333;
+    cursor: n-resize;
+}
+
+.bar text, .dist text, .hist text {
+	fill: white;
+	font-size: 11px;
+}
+
+.bar text.name, .dist text.name, .hist text.name {
+    fill: #444;
+}
+
+.bar text.rule, .hist text.rule {
+	fill: black;
+}
+
+.bar text.name, .hist text.name {
+	text-anchor: middle;
+}
+
+.bar line, .hist line {
+  shape-rendering: crispEdges;
+  stroke: #ccc;
+  opacity: 1;
+}
+
+#slider {
+    margin-top: 20px;
+}
+
+.table-wrapper {
+    margin-top: 10px;
+}
+
+.table-wrapper h3 {
+    color: #555;
+}
+
+.table-wrapper p {
+    margin-bottom: 15px;
+}
+
+.table-wrapper h4 {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.table-wrapper h3 span.good {
+    color: #468847;
+}
+
+.table-wrapper h3 span.bad {
+    color: #B94A48;
+}
+
+
+.table-wrapper .table {
+    width: auto;
+}
+
+.table-wrapper td, .table-wrapper th {
+    width: 65px;
+}
+
+.sample-stat table th {
+    vertical-align: middle;
+}
+
+path {
+  stroke: #005;
+  stroke-width: 1.5px;
+  fill: none;
+}
+
+rect.box {
+    fill: none;
+    stroke: #aaa;
+}
+
+.qq circle,  .qq line {
+    fill: none;
+    stroke: steelblue;
+}
+
+.qq line {
+    opacity: 0.5;
+}
+
+.rule line {
+    stroke: #ccc;
+    shape-rendering: crispEdges;
+    opacity: 0.5;
+}
+
+.rule text {
+    font-size: 0.7em;
+    
+}
+
+circle.mean {
+    stroke: #000;
+    fill: #fff;
+    cursor: e-resize;
+}
+
+text.mean {
+    font-size: 11px;
+    fill: #444;
+}
+
+.box {font: 9px sans-serif; fill: #555;}
+.box line, .box rect { stroke: #000; shape-rendering: crispEdges; fill: #fff; }
+.box .median {
+    stroke: royalblue;
+}
+.box .center {
+    stroke-dasharray: 2 2;
+    color: #ccc;
+}
+.box .outlier { stroke: #ccc; fill: none;}
+
+.scatter {
+    font: 10px sans-serif;
+    fill: #444;
+}
+
+.scatter circle {
+    fill: steelblue;
+    stroke: steelblue;
+}
+
+.scatter .axis line {
+  fill: none;
+  stroke: #999;
+  shape-rendering: crispEdges;
+  stroke-width: 1px;
+  opacity: 0.5;
+}
+
+.scatter line.regr {
+    fill: none;
+    stroke: royalblue;
+    stroke-width: 1px;
+}
+
+.scatter .axis path {
+    stroke: none;    
+}
